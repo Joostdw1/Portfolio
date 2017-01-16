@@ -1,7 +1,7 @@
 # Portfolio
 some of my actual code that I worked on in projects:
 
-first project - strategy game			January 2016 - February 2016
+first project - strategy game			January 2016 - February 2016<br>
 This was my first programming project.
 It's a strategy game build in PyGame. I mainly worked on the map and the game logics.
 The game is not complete but the basics of the game works.
