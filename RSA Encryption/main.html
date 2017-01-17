@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>RSA algorithm</title>
+
+    <script src="bignumber.js"></script>
+    <script src="rsajs.js"></script>
+  </head>
+  <body>
+    type string here: <input type="text" name="fname" id="inputString"><br />
+    <script>
+      var calc = 0.1 + 0.2;
+      if(calc === 0.3){
+        document.write("0.3 " + calc + "<br />");
+      } else {
+        document.write("0.300000000004 " + calc + "<br />");
+      }
+      /*
+      //rsa();
+
+      var e = 97;//7;//17;
+      var d = 293;//31;//65777;
+      var n = 59 * 71;
+      var msg = "Doeips{}[]!";
+      var emsg = encrypt(msg, e , n);
+      var dmsg = decrypt(emsg, d, n);
+      document.write("text = " + msg + "<br />")
+      document.write("encrypted text = " + emsg + "<br />")
+      document.write("decrypted text = " + dmsg + "<br />")
+      */
+
+
+      //TEST
+      var msg = "moooooooooooooooooooooooooooooooooohhhhgggeeeeeeeeeeeeeeeeeeeeeeeeTekst encryptie jongûh"
+      document.write(msg + "<br />");
+      var emsg = encryptmsg(msg)
+      document.write(emsg + "<br />");
+      var dmsg = decryptmsg(emsg)
+      document.write(dmsg + "<br />");
+
+
+
+    </script>
+
+  </body>
+</html>
