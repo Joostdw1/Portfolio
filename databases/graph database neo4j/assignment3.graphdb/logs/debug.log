@@ -1,0 +1,724 @@
+2016-10-23 10:36:06.110+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2016-10-23 10:36:06.111+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2016-10-23 10:36:06.111+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2016-10-23 10:36:06.111+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.type=BOLT
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=D:\2 Development\Assignments\assignment3\assignment3.graphdb
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.tls_level=OPTIONAL
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.shell.enabled=true
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.type=HTTP
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=D:\2 Development\Assignments\assignment3\assignment3.graphdb
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.security.auth_store.location=data\dbms\auth
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 7,91 GB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 4,06 GB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 671,86 MB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 9,16 GB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 3,92 GB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 141,52 MB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 316,50 MB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 1,76 GB
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2016-10-23 10:36:06.112+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=28,63 MB, used=28,41 MB, max=240,00 MB, threshold=0,00 B
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=72,63 MB, used=71,07 MB, max=-1,00 B, threshold=0,00 B
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=10,63 MB, used=10,34 MB, max=1,00 GB, threshold=0,00 B
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=154,00 MB, used=96,49 MB, max=603,00 MB, threshold=?
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=30,00 MB, used=29,63 MB, max=30,00 MB, threshold=?
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=132,50 MB, used=48,86 MB, max=1,32 GB, threshold=0,00 B
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2016-10-23 10:36:06.113+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 16124@Joost
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Europe/Berlin
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.92-b14
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\Joostdw1\AppData\Local\Microsoft\WindowsApps;C:\Users\Joostdw1\AppData\Roaming\npm;c:\program files\java\jre1.8.0_92\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2016-10-23 10:36:06.114+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunec.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/nashorn.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/.install4j/i4jruntime.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\jsse.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\charsets.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/zipfs.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunmscapi.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\jfr.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\resources.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/jaccess.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/neo4j-desktop-3.0.6.jar
+2016-10-23 10:36:06.119+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/cldrdata.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunjce_provider.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-desktop-3.0.6.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\classes
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\rt.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\jce.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\.install4j\i4jruntime.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/localedata.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/dnsns.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/jfxrt.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\sunrsasign.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/access-bridge-64.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunpkcs11.jar
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2016-10-23 10:36:06.120+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2016-10-23 10:36:06.121+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2016-10-23 10:36:06.121+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\iCLS Client
+2016-10-23 10:36:06.122+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\iCLS Client
+2016-10-23 10:36:06.122+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2016-10-23 10:36:06.122+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2016-10-23 10:36:06.123+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2016-10-23 10:36:06.123+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2016-10-23 10:36:06.124+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2016-10-23 10:36:06.124+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2016-10-23 10:36:06.125+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2016-10-23 10:36:06.125+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2016-10-23 10:36:06.126+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Skype\Phone
+2016-10-23 10:36:06.126+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\config\systemprofile\.dnx\bin
+2016-10-23 10:36:06.126+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft DNX\Dnvm
+2016-10-23 10:36:06.127+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2016-10-23 10:36:06.127+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\QuickTime\QTSystem
+2016-10-23 10:36:06.128+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\130\Tools\Binn
+2016-10-23 10:36:06.128+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin
+2016-10-23 10:36:06.129+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\dotnet
+2016-10-23 10:36:06.129+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\nodejs
+2016-10-23 10:36:06.130+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\Joostdw1\AppData\Local\Microsoft\WindowsApps
+2016-10-23 10:36:06.130+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\Joostdw1\AppData\Roaming\npm
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_92\bin
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_92\bin
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = NL
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 3.0.6\bin\
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 3.0.6\bin
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.nio.ch.bugLevel = 
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\Joostdw1
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Europe/Berlin
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1252
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = Joostdw1
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = nl
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 3.0.6\
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2016-10-23 10:36:06.131+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c149:f80d:cb76:3d8d%eth1
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Device (RFCOMM Protocol TDI):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter #3:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:820%net5
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter #2:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.8.32
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:2da8:c190:38f5:8d5%wlan0
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:210b:290d:c7d5:7307%eth5
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:a111:9fee:9c89:a9b3%wlan1
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:100:7f:fffe%net8
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-Virtual WiFi Filter Driver-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-Native WiFi Filter Driver-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-QoS Packet Scheduler-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-10-23 10:36:06.180+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2016-10-23 10:36:06.181+0000 INFO  [o.n.b.v.r.Sessions] No SSL certificate found, generating a self-signed certificate..
+2016-10-23 10:36:06.585+0000 INFO  [o.n.b.v.r.Sessions] Bolt Server extension loaded.
+2016-10-23 10:36:06.585+0000 INFO  [o.n.b.v.r.Sessions] Bolt enabled on localhost:7687.
+2016-10-23 10:36:06.589+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_0[v0.A.7]' for the new store
+2016-10-23 10:36:08.877+0000 INFO  [o.n.k.a.i.l.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2016-10-23 10:36:08.932+0000 INFO  [o.n.k.NeoStoreDataSource] Opened logical log [D:\2 Development\Assignments\assignment3\assignment3.graphdb\neostore.transaction.db.0] version=0, lastTxId=1 (clean)
+2016-10-23 10:36:08.933+0000 WARN  [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2016-10-23 10:36:08.997+0000 INFO  [o.n.k.a.i.l.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
+2016-10-23 10:36:08.997+0000 INFO  [o.n.k.a.i.l.LuceneLabelScanStore] Lucene scan store rebuilt (roughly 0 nodes)
+2016-10-23 10:36:08.998+0000 INFO  [o.n.k.i.DatabaseHealth] Database health set to OK
+2016-10-23 10:36:09.021+0000 INFO  [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Database is now ready
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] Graph Database: community single StoreId{creationTime=1477218968668, randomId=693757204126322301, storeVersion=15531981201765894, upgradeTime=1477218968668, upgradeId=1}
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] Kernel version: 3.0.6
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.7
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.7
+2016-10-23 10:36:09.022+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.7
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore: used=0 high=-1
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore: used=0 high=-1
+2016-10-23 10:36:09.023+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore: used=0 high=-1
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore: used=0 high=-1
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore: used=0 high=-1
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore: used=0 high=-1
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore: used=1 high=0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore: used=15 high=14
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] Neostore records:
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1477218968668
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 693757204126322301
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 15531981201765894
+2016-10-23 10:36:09.024+0000 INFO  [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1477218968668
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 0
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 16
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 0
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] Transaction log:
+2016-10-23 10:36:09.025+0000 INFO  [o.n.k.i.DiagnosticsManager] No transactions found in any log
+2016-10-23 10:36:09.026+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2016-10-23 10:36:09.026+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-10-23 10:36:09.027+0000 INFO  [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 582823702528 / 540203724800 / 92
+Storage files: (filename : modification date - size)
+2016-10-23 10:36:09.027+0000 INFO  [o.n.k.i.DiagnosticsManager]   certificates:
+2016-10-23 10:36:09.027+0000 INFO  [o.n.k.i.DiagnosticsManager]     neo4j.cert: 2016-10-23T12:36:06+0200 - 1002,00 B
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]     neo4j.key: 2016-10-23T12:36:06+0200 - 1,69 kB
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T12:36:06+0200 - 2,67 kB
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]   data:
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]     dbms:
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]       auth: 2016-10-23T12:36:09+0200 - 137,00 B
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-10-23T12:36:09+0200 - 137,00 B
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T12:36:09+0200 - 137,00 B
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]   index:
+2016-10-23 10:36:09.028+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T12:36:08+0200 - 0,00 B
+2016-10-23 10:36:09.029+0000 INFO  [o.n.k.i.DiagnosticsManager]   logs:
+2016-10-23 10:36:09.033+0000 INFO  [o.n.k.i.DiagnosticsManager]     debug.log: 2016-10-23T12:36:08+0200 - 31,72 kB
+2016-10-23 10:36:09.033+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T12:36:06+0200 - 31,72 kB
+2016-10-23 10:36:09.033+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore: 2016-10-23T12:36:08+0200 - 8,00 kB
+2016-10-23 10:36:09.033+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2016-10-23T12:36:08+0200 - 96,00 B
+2016-10-23 10:36:09.034+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.id: 2016-10-23T12:36:08+0200 - 9,00 B
+2016-10-23 10:36:09.034+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2016-10-23T12:36:07+0200 - 0,00 B
+2016-10-23 10:36:09.035+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.035+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2016-10-23T12:36:07+0200 - 8,00 kB
+2016-10-23 10:36:09.036+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.036+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2016-10-23T12:36:06+0200 - 0,00 B
+2016-10-23 10:36:09.036+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2016-10-23T12:36:06+0200 - 9,00 B
+2016-10-23 10:36:09.037+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 10:36:09.037+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2016-10-23T12:36:06+0200 - 9,00 B
+2016-10-23 10:36:09.037+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2016-10-23T12:36:07+0200 - 0,00 B
+2016-10-23 10:36:09.038+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 10:36:09.038+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.039+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.039+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2016-10-23T12:36:06+0200 - 0,00 B
+2016-10-23 10:36:09.040+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2016-10-23T12:36:06+0200 - 9,00 B
+2016-10-23 10:36:09.040+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 10:36:09.041+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2016-10-23T12:36:06+0200 - 9,00 B
+2016-10-23 10:36:09.041+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 10:36:09.041+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2016-10-23T12:36:06+0200 - 9,00 B
+2016-10-23 10:36:09.042+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2016-10-23T12:36:08+0200 - 8,00 kB
+2016-10-23 10:36:09.042+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2016-10-23T12:36:08+0200 - 9,00 B
+2016-10-23 10:36:09.042+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2016-10-23T12:36:07+0200 - 0,00 B
+2016-10-23 10:36:09.043+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.043+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2016-10-23T12:36:07+0200 - 0,00 B
+2016-10-23 10:36:09.044+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.044+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2016-10-23T12:36:07+0200 - 8,00 kB
+2016-10-23 10:36:09.045+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2016-10-23T12:36:07+0200 - 9,00 B
+2016-10-23 10:36:09.045+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2016-10-23T12:36:08+0200 - 8,00 kB
+2016-10-23 10:36:09.046+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2016-10-23T12:36:08+0200 - 9,00 B
+2016-10-23 10:36:09.046+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2016-10-23T12:36:08+0200 - 16,00 B
+2016-10-23 10:36:09.046+0000 INFO  [o.n.k.i.DiagnosticsManager]   schema:
+2016-10-23 10:36:09.046+0000 INFO  [o.n.k.i.DiagnosticsManager]     label:
+2016-10-23 10:36:09.047+0000 INFO  [o.n.k.i.DiagnosticsManager]       lucene:
+2016-10-23 10:36:09.047+0000 INFO  [o.n.k.i.DiagnosticsManager]         labelStore:
+2016-10-23 10:36:09.047+0000 INFO  [o.n.k.i.DiagnosticsManager]           1:
+2016-10-23 10:36:09.047+0000 INFO  [o.n.k.i.DiagnosticsManager]             write.lock: 2016-10-23T12:36:08+0200 - 0,00 B
+2016-10-23 10:36:09.047+0000 INFO  [o.n.k.i.DiagnosticsManager]           - Total: 2016-10-23T12:36:08+0200 - 0,00 B
+2016-10-23 10:36:09.048+0000 INFO  [o.n.k.i.DiagnosticsManager]           failure-message: 2016-10-23T12:36:08+0200 - 16,00 kB
+2016-10-23 10:36:09.048+0000 INFO  [o.n.k.i.DiagnosticsManager]         - Total: 2016-10-23T12:36:08+0200 - 16,00 kB
+2016-10-23 10:36:09.048+0000 INFO  [o.n.k.i.DiagnosticsManager]       - Total: 2016-10-23T12:36:08+0200 - 16,00 kB
+2016-10-23 10:36:09.048+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-10-23T12:36:08+0200 - 16,00 kB
+2016-10-23 10:36:09.048+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T12:36:08+0200 - 16,00 kB
+2016-10-23 10:36:09.048+0000 INFO  [o.n.k.i.DiagnosticsManager]   store_lock: 2016-10-23T12:36:06+0200 - 0,00 B
+2016-10-23 10:36:09.049+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-10-23 10:36:09.059+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
+2016-10-23 10:36:09.559+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2016-10-23 10:41:01.651+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 223ms.
+2016-10-23 10:41:09.019+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting check pointing...
+2016-10-23 10:41:09.019+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting store flush...
+2016-10-23 10:41:09.163+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 35 to [D:\2 Development\Assignments\assignment3\assignment3.graphdb\neostore.counts.db.b], from [D:\2 Development\Assignments\assignment3\assignment3.graphdb\neostore.counts.db.a].
+2016-10-23 10:41:09.171+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 35 to [D:\2 Development\Assignments\assignment3\assignment3.graphdb\neostore.counts.db.b], from [D:\2 Development\Assignments\assignment3\assignment3.graphdb\neostore.counts.db.a].
+2016-10-23 10:41:09.429+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Store flush completed
+2016-10-23 10:41:09.429+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting appending check point entry into the tx log...
+2016-10-23 10:41:09.448+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Appending check point entry into the tx log completed
+2016-10-23 10:41:09.448+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Check pointing completed
+2016-10-23 10:41:09.449+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-10-23 10:41:09.449+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-10-23 11:01:20.177+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.type=BOLT
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.tls_level=OPTIONAL
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.shell.enabled=true
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.type=HTTP
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.security.auth_store.location=data\dbms\auth
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 7,91 GB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 4,16 GB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 716,95 MB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 9,16 GB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 3,84 GB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 168,28 MB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 324,50 MB
+2016-10-23 11:01:20.179+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 1,76 GB
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=34,56 MB, used=34,30 MB, max=240,00 MB, threshold=0,00 B
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=74,88 MB, used=73,36 MB, max=-1,00 B, threshold=0,00 B
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=10,88 MB, used=10,55 MB, max=1,00 GB, threshold=0,00 B
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=129,50 MB, used=106,62 MB, max=547,50 MB, threshold=?
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=62,50 MB, used=0,00 B, max=62,50 MB, threshold=?
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=132,50 MB, used=49,60 MB, max=1,32 GB, threshold=0,00 B
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2016-10-23 11:01:20.180+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 16124@Joost
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Europe/Berlin
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.92-b14
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\Joostdw1\AppData\Local\Microsoft\WindowsApps;C:\Users\Joostdw1\AppData\Roaming\npm;c:\program files\java\jre1.8.0_92\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2016-10-23 11:01:20.181+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunec.jar
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/nashorn.jar
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/.install4j/i4jruntime.jar
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\jsse.jar
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\charsets.jar
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/zipfs.jar
+2016-10-23 11:01:20.185+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunmscapi.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\jfr.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\resources.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/jaccess.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/neo4j-desktop-3.0.6.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/cldrdata.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunjce_provider.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-desktop-3.0.6.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\classes
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\rt.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\jce.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\.install4j\i4jruntime.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/localedata.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/dnsns.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/jfxrt.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_92\lib\sunrsasign.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/access-bridge-64.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_92/lib/ext/sunpkcs11.jar
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2016-10-23 11:01:20.186+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2016-10-23 11:01:20.187+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\iCLS Client
+2016-10-23 11:01:20.187+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\iCLS Client
+2016-10-23 11:01:20.187+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2016-10-23 11:01:20.187+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2016-10-23 11:01:20.187+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2016-10-23 11:01:20.188+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2016-10-23 11:01:20.188+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2016-10-23 11:01:20.188+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2016-10-23 11:01:20.189+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2016-10-23 11:01:20.189+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2016-10-23 11:01:20.189+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Skype\Phone
+2016-10-23 11:01:20.189+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\config\systemprofile\.dnx\bin
+2016-10-23 11:01:20.190+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft DNX\Dnvm
+2016-10-23 11:01:20.190+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2016-10-23 11:01:20.190+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\QuickTime\QTSystem
+2016-10-23 11:01:20.190+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\130\Tools\Binn
+2016-10-23 11:01:20.191+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin
+2016-10-23 11:01:20.191+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\dotnet
+2016-10-23 11:01:20.191+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\nodejs
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\Joostdw1\AppData\Local\Microsoft\WindowsApps
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\Joostdw1\AppData\Roaming\npm
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_92\bin
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_92\bin
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = NL
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 3.0.6\bin\
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 3.0.6\bin
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.nio.ch.bugLevel = 
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\Joostdw1
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Europe/Berlin
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1252
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = Joostdw1
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = nl
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 3.0.6\
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2016-10-23 11:01:20.192+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2016-10-23 11:01:20.237+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c149:f80d:cb76:3d8d%eth1
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Device (RFCOMM Protocol TDI):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter #3:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:820%net5
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter #2:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.8.32
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:2da8:c190:38f5:8d5%wlan0
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:210b:290d:c7d5:7307%eth5
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:a111:9fee:9c89:a9b3%wlan1
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:100:7f:fffe%net8
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-Virtual WiFi Filter Driver-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-Native WiFi Filter Driver-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-QoS Packet Scheduler-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR956x Wireless Network Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-10-23 11:01:20.238+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2016-10-23 11:01:20.250+0000 INFO  [o.n.b.v.r.Sessions] Bolt Server extension loaded.
+2016-10-23 11:01:20.250+0000 INFO  [o.n.b.v.r.Sessions] Bolt enabled on localhost:7687.
+2016-10-23 11:01:20.294+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_0[v0.A.7] record format from store D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb
+2016-10-23 11:01:20.297+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_0[v0.A.7]
+2016-10-23 11:01:20.438+0000 INFO  [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.nodestore.db.labels] ...
+2016-10-23 11:01:20.527+0000 INFO  [o.n.k.i.s.DynamicArrayStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.nodestore.db.labels] high id=1 (defragged=0)
+2016-10-23 11:01:20.527+0000 INFO  [o.n.k.i.s.DynamicArrayStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.nodestore.db.labels rebuild id generator, highId=1 defragged count=0
+2016-10-23 11:01:20.527+0000 INFO  [o.n.k.i.s.NodeStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.nodestore.db] ...
+2016-10-23 11:01:20.593+0000 INFO  [o.n.k.i.s.NodeStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.nodestore.db] high id=168 (defragged=0)
+2016-10-23 11:01:20.593+0000 INFO  [o.n.k.i.s.NodeStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.nodestore.db rebuild id generator, highId=168 defragged count=0
+2016-10-23 11:01:20.593+0000 INFO  [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.index.keys] ...
+2016-10-23 11:01:20.649+0000 INFO  [o.n.k.i.s.DynamicStringStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.index.keys] high id=18 (defragged=0)
+2016-10-23 11:01:20.649+0000 INFO  [o.n.k.i.s.DynamicStringStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.index.keys rebuild id generator, highId=18 defragged count=0
+2016-10-23 11:01:20.649+0000 INFO  [o.n.k.i.s.PropertyKeyTokenStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.index] ...
+2016-10-23 11:01:20.704+0000 INFO  [o.n.k.i.s.PropertyKeyTokenStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.index] high id=17 (defragged=0)
+2016-10-23 11:01:20.705+0000 INFO  [o.n.k.i.s.PropertyKeyTokenStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.index rebuild id generator, highId=17 defragged count=0
+2016-10-23 11:01:20.773+0000 INFO  [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.strings] ...
+2016-10-23 11:01:20.818+0000 INFO  [o.n.k.i.s.DynamicStringStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.strings] high id=1 (defragged=0)
+2016-10-23 11:01:20.818+0000 INFO  [o.n.k.i.s.DynamicStringStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2016-10-23 11:01:20.818+0000 INFO  [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.arrays] ...
+2016-10-23 11:01:20.863+0000 INFO  [o.n.k.i.s.DynamicArrayStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.arrays] high id=1 (defragged=0)
+2016-10-23 11:01:20.863+0000 INFO  [o.n.k.i.s.DynamicArrayStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2016-10-23 11:01:20.863+0000 INFO  [o.n.k.i.s.PropertyStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db] ...
+2016-10-23 11:01:20.907+0000 INFO  [o.n.k.i.s.PropertyStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db] high id=192 (defragged=0)
+2016-10-23 11:01:20.907+0000 INFO  [o.n.k.i.s.PropertyStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.propertystore.db rebuild id generator, highId=192 defragged count=0
+2016-10-23 11:01:20.907+0000 INFO  [o.n.k.i.s.RelationshipStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshipstore.db] ...
+2016-10-23 11:01:20.951+0000 INFO  [o.n.k.i.s.RelationshipStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshipstore.db] high id=170 (defragged=0)
+2016-10-23 11:01:20.951+0000 INFO  [o.n.k.i.s.RelationshipStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshipstore.db rebuild id generator, highId=170 defragged count=0
+2016-10-23 11:01:20.951+0000 INFO  [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshiptypestore.db.names] ...
+2016-10-23 11:01:20.996+0000 INFO  [o.n.k.i.s.DynamicStringStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshiptypestore.db.names] high id=6 (defragged=0)
+2016-10-23 11:01:20.996+0000 INFO  [o.n.k.i.s.DynamicStringStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshiptypestore.db.names rebuild id generator, highId=6 defragged count=0
+2016-10-23 11:01:20.996+0000 INFO  [o.n.k.i.s.RelationshipTypeTokenStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshiptypestore.db] ...
+2016-10-23 11:01:21.040+0000 INFO  [o.n.k.i.s.RelationshipTypeTokenStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshiptypestore.db] high id=5 (defragged=0)
+2016-10-23 11:01:21.040+0000 INFO  [o.n.k.i.s.RelationshipTypeTokenStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshiptypestore.db rebuild id generator, highId=5 defragged count=0
+2016-10-23 11:01:21.107+0000 INFO  [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.labeltokenstore.db.names] ...
+2016-10-23 11:01:21.151+0000 INFO  [o.n.k.i.s.DynamicStringStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.labeltokenstore.db.names] high id=6 (defragged=0)
+2016-10-23 11:01:21.151+0000 INFO  [o.n.k.i.s.DynamicStringStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.labeltokenstore.db.names rebuild id generator, highId=6 defragged count=0
+2016-10-23 11:01:21.152+0000 INFO  [o.n.k.i.s.LabelTokenStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.labeltokenstore.db] ...
+2016-10-23 11:01:21.196+0000 INFO  [o.n.k.i.s.LabelTokenStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.labeltokenstore.db] high id=5 (defragged=0)
+2016-10-23 11:01:21.196+0000 INFO  [o.n.k.i.s.LabelTokenStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.labeltokenstore.db rebuild id generator, highId=5 defragged count=0
+2016-10-23 11:01:21.262+0000 INFO  [o.n.k.i.s.SchemaStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.schemastore.db] ...
+2016-10-23 11:01:21.307+0000 INFO  [o.n.k.i.s.SchemaStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.schemastore.db] high id=1 (defragged=0)
+2016-10-23 11:01:21.307+0000 INFO  [o.n.k.i.s.SchemaStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.schemastore.db rebuild id generator, highId=1 defragged count=0
+2016-10-23 11:01:21.307+0000 INFO  [o.n.k.i.s.RelationshipGroupStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshipgroupstore.db] ...
+2016-10-23 11:01:21.351+0000 INFO  [o.n.k.i.s.RelationshipGroupStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshipgroupstore.db] high id=1 (defragged=0)
+2016-10-23 11:01:21.351+0000 INFO  [o.n.k.i.s.RelationshipGroupStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2016-10-23 11:01:21.351+0000 INFO  [o.n.k.i.s.MetaDataStore] Rebuilding id generator for[D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore] ...
+2016-10-23 11:01:21.396+0000 INFO  [o.n.k.i.s.MetaDataStore] [D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore] high id=15 (defragged=0)
+2016-10-23 11:01:21.396+0000 INFO  [o.n.k.i.s.MetaDataStore] D:\2 Development\Assignments\assignment3\inleveren\assignment3.graphdb\neostore rebuild id generator, highId=15 defragged count=0
+2016-10-23 11:01:21.397+0000 INFO  [o.n.k.i.DatabaseHealth] Database health set to OK
+2016-10-23 11:01:21.437+0000 INFO  [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
+2016-10-23 11:01:21.437+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Database is now ready
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] Graph Database: community single StoreId{creationTime=1477218968668, randomId=693757204126322301, storeVersion=15531981201765894, upgradeTime=1477218968668, upgradeId=1}
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] Kernel version: 3.0.6
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.7
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore: used=168 high=167
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=18 high=17
+2016-10-23 11:01:21.438+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore: used=17 high=16
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore: used=192 high=191
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore: used=170 high=169
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=6 high=5
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore: used=5 high=4
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=6 high=5
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore: used=5 high=4
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore: used=1 high=0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore: used=15 high=14
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] Neostore records:
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1477218968668
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 693757204126322301
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 35
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 15531981201765894
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1477218968668
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -161349321267
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 47760
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1477219175392
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2016-10-23 11:01:21.439+0000 INFO  [o.n.k.i.DiagnosticsManager] Transaction log:
+2016-10-23 11:01:21.440+0000 INFO  [o.n.k.i.DiagnosticsManager] Oldest transaction 2 found in log with version 0
+2016-10-23 11:01:21.440+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2016-10-23 11:01:21.440+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-10-23 11:01:21.442+0000 INFO  [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 582823702528 / 540203307008 / 92
+Storage files: (filename : modification date - size)
+2016-10-23 11:01:21.442+0000 INFO  [o.n.k.i.DiagnosticsManager]   certificates:
+2016-10-23 11:01:21.442+0000 INFO  [o.n.k.i.DiagnosticsManager]     neo4j.cert: 2016-10-23T12:36:06+0200 - 1002,00 B
+2016-10-23 11:01:21.442+0000 INFO  [o.n.k.i.DiagnosticsManager]     neo4j.key: 2016-10-23T12:36:06+0200 - 1,69 kB
+2016-10-23 11:01:21.442+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T13:00:27+0200 - 2,67 kB
+2016-10-23 11:01:21.442+0000 INFO  [o.n.k.i.DiagnosticsManager]   data:
+2016-10-23 11:01:21.443+0000 INFO  [o.n.k.i.DiagnosticsManager]     dbms:
+2016-10-23 11:01:21.443+0000 INFO  [o.n.k.i.DiagnosticsManager]       auth: 2016-10-23T12:36:29+0200 - 113,00 B
+2016-10-23 11:01:21.443+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-10-23T13:00:27+0200 - 113,00 B
+2016-10-23 11:01:21.443+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T13:00:27+0200 - 113,00 B
+2016-10-23 11:01:21.443+0000 INFO  [o.n.k.i.DiagnosticsManager]   index:
+2016-10-23 11:01:21.443+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T12:36:08+0200 - 0,00 B
+2016-10-23 11:01:21.444+0000 INFO  [o.n.k.i.DiagnosticsManager]   logs:
+2016-10-23 11:01:21.449+0000 INFO  [o.n.k.i.DiagnosticsManager]     debug.log: 2016-10-23T12:41:09+0200 - 79,72 kB
+2016-10-23 11:01:21.449+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T13:00:27+0200 - 79,72 kB
+2016-10-23 11:01:21.449+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.449+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2016-10-23T12:36:08+0200 - 96,00 B
+2016-10-23 11:01:21.449+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.counts.db.b: 2016-10-23T12:41:09+0200 - 1,00 kB
+2016-10-23 11:01:21.450+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.id: 2016-10-23T13:01:21+0200 - 9,00 B
+2016-10-23 11:01:21.450+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.451+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2016-10-23T13:01:21+0200 - 9,00 B
+2016-10-23 11:01:21.451+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.452+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2016-10-23T13:01:21+0200 - 9,00 B
+2016-10-23 11:01:21.452+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.453+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.453+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 11:01:21.454+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.454+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2016-10-23T12:41:09+0200 - 7,97 kB
+2016-10-23 11:01:21.454+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 11:01:21.455+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.456+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.456+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.457+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.457+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.457+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.457+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2016-10-23T12:36:06+0200 - 8,00 kB
+2016-10-23 11:01:21.458+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.458+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2016-10-23T12:36:08+0200 - 8,00 kB
+2016-10-23 11:01:21.459+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2016-10-23T13:01:21+0200 - 9,00 B
+2016-10-23 11:01:21.459+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2016-10-23T12:41:09+0200 - 7,97 kB
+2016-10-23 11:01:21.459+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.460+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.460+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2016-10-23T13:01:21+0200 - 9,00 B
+2016-10-23 11:01:21.460+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2016-10-23T12:41:09+0200 - 8,00 kB
+2016-10-23 11:01:21.461+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2016-10-23T13:01:20+0200 - 9,00 B
+2016-10-23 11:01:21.461+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2016-10-23T12:36:08+0200 - 8,00 kB
+2016-10-23 11:01:21.461+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2016-10-23T13:01:21+0200 - 9,00 B
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2016-10-23T12:41:09+0200 - 46,66 kB
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]   schema:
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]     label:
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]       lucene:
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]         labelStore:
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]           1:
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]             _b.cfe: 2016-10-23T12:41:09+0200 - 305,00 B
+2016-10-23 11:01:21.462+0000 INFO  [o.n.k.i.DiagnosticsManager]             _b.cfs: 2016-10-23T12:41:09+0200 - 3,14 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]             _b.si: 2016-10-23T12:41:09+0200 - 396,00 B
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]             segments_1: 2016-10-23T12:41:09+0200 - 136,00 B
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]             write.lock: 2016-10-23T12:36:08+0200 - 0,00 B
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]           - Total: 2016-10-23T13:00:27+0200 - 3,96 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]           failure-message: 2016-10-23T12:36:08+0200 - 16,00 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]         - Total: 2016-10-23T13:00:27+0200 - 19,96 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]       - Total: 2016-10-23T13:00:27+0200 - 19,96 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-10-23T13:00:27+0200 - 19,96 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-10-23T13:00:27+0200 - 19,96 kB
+2016-10-23 11:01:21.463+0000 INFO  [o.n.k.i.DiagnosticsManager]   store_lock: 2016-10-23T12:36:06+0200 - 0,00 B
+2016-10-23 11:01:21.464+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-10-23 11:01:21.471+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
+2016-10-23 11:01:21.945+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2016-10-23 11:41:02.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 290ms.
+2016-10-23 12:41:02.458+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 350ms.
+2016-10-23 13:02:07.554+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 947386ms.
+2016-10-23 13:02:19.536+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3571ms.
+2016-10-23 14:55:44.569+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 791526ms.
+2016-10-23 16:10:05.551+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 399ms.
+2016-10-23 19:14:43.554+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9004287ms.
+2016-10-23 19:40:10.218+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 426ms.
+2016-10-23 20:40:10.620+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 301ms.
+2016-10-23 21:40:11.098+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 412ms.

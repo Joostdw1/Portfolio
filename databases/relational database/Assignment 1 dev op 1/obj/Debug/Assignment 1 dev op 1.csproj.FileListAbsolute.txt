@@ -1,0 +1,22 @@
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Assignment 1 dev op 1.exe.config
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Assignment 1 dev op 1.exe
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Assignment 1 dev op 1.pdb
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.csprojResolveAssemblyReference.cache
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.Form1.resources
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.Properties.Resources.resources
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.csproj.GenerateResource.Cache
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.exe
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.pdb
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.Employees.resources
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Npgsql.dll
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Npgsql.xml
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.projects.resources
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.Positions.resources
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.Budget.resources
+D:\2 Development\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment_1_dev_op_1.Headquarters.resources
+D:\2 Development 6a\OP1\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Assignment 1 dev op 1.exe.config
+D:\2 Development 6a\OP1\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.exe
+D:\2 Development 6a\OP1\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.pdb
+D:\2 Development 6a\OP5\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\bin\Debug\Assignment 1 dev op 1.exe.config
+D:\2 Development 6a\OP5\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.exe
+D:\2 Development 6a\OP5\Assignments\assignment1\Assignment 1 dev op 1\Assignment 1 dev op 1\obj\Debug\Assignment 1 dev op 1.pdb

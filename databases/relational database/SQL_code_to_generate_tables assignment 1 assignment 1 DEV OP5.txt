@@ -1,0 +1,217 @@
+--paste everything in the pgAdemin 3 SQL Querie executioner and run it
+CREATE TABLE adresses
+
+(
+  
+country character(20) NOT NULL,
+  
+postal_code character(20) NOT NULL,
+  
+city character(20),
+  
+street character(25),
+  
+"number" integer,
+  
+CONSTRAINT adresses_pkey PRIMARY KEY (country, postal_code)
+
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+--------------------------------------------------------------------------------
+CREATE TABLE headquarters
+
+(
+  
+building_name character(20) NOT NULL,
+  
+nr_of_rooms integer,
+  
+monthly_rent double precision,
+  
+CONSTRAINT headquarters_pkey PRIMARY KEY (building_name)
+
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+--------------------------------------------------------------------------------
+CREATE TABLE positions
+
+(
+  
+position_name character(20) NOT NULL,
+  
+description character(50),
+  
+hour_fee double precision,
+  
+CONSTRAINT positions_pkey PRIMARY KEY (position_name)
+
+)
+
+WITH (
+  
+OIDS=FALSE
+);
+--------------------------------------------------------------------------------
+CREATE TABLE employees
+
+(
+  
+bsn integer NOT NULL,
+  
+name character(20),
+  
+surname character(20),
+  
+main_headquarter character(20),
+  
+CONSTRAINT employees_pkey PRIMARY KEY (bsn),
+  
+CONSTRAINT employees_main_headquarter_fkey FOREIGN KEY (main_headquarter)
+      
+	REFERENCES headquarters (building_name) MATCH SIMPLE
+      
+	ON UPDATE CASCADE ON DELETE CASCADE 
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+--------------------------------------------------------------------------------
+CREATE TABLE degrees
+
+(
+  
+bsn integer NOT NULL,
+  
+course character(20) NOT NULL,
+  
+school character(20) NOT NULL,
+  
+level character(20) NOT NULL,
+  
+CONSTRAINT degrees_pkey PRIMARY KEY (bsn, course, school, level),
+  
+CONSTRAINT degrees_bsn_fkey FOREIGN KEY (bsn)
+      
+	REFERENCES employees (bsn) MATCH SIMPLE
+      
+	ON UPDATE NO ACTION ON DELETE CASCADE
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+--------------------------------------------------------------------------------
+CREATE TABLE projects
+
+(
+  
+project_id integer NOT NULL,
+  
+budget double precision,
+  
+allocated_hours integer,
+  
+headquarter character(20),
+  
+CONSTRAINT projects_pkey PRIMARY KEY (project_id),
+  
+CONSTRAINT projects_headquarters_fkey FOREIGN KEY (headquarter)
+      
+	REFERENCES headquarters (building_name) MATCH SIMPLE
+      
+	ON UPDATE CASCADE ON DELETE CASCADE
+
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+--------------------------------------------------------------------------------
+CREATE TABLE residence
+
+(
+  
+bsn integer NOT NULL,
+  
+country character(20) NOT NULL,
+  
+postal_code character(20) NOT NULL,
+  
+residence boolean,
+  
+CONSTRAINT residence_pkey PRIMARY KEY (bsn, country, postal_code),
+  
+CONSTRAINT residence_bsn_fkey FOREIGN KEY (bsn)
+      
+	REFERENCES employees (bsn) MATCH SIMPLE
+      
+	ON UPDATE NO ACTION ON DELETE CASCADE,
+  
+CONSTRAINT residence_country_fkey FOREIGN KEY (country, postal_code)
+      
+	REFERENCES adresses (country, postal_code) MATCH SIMPLE
+        ON UPDATE NO ACTION ON DELETE CASCADE
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+--------------------------------------------------------------------------------
+CREATE TABLE works_as
+
+(
+  
+bsn integer NOT NULL,
+  
+position_name character(20) NOT NULL,
+  
+project_id integer,
+  amount_of_hours integer,
+  
+CONSTRAINT works_as_pkey PRIMARY KEY (bsn, position_name),
+  
+CONSTRAINT works_as_bsn_fkey FOREIGN KEY (bsn)
+      
+	REFERENCES employees (bsn) MATCH SIMPLE
+      
+	ON UPDATE NO ACTION ON DELETE CASCADE,
+  
+CONSTRAINT works_as_position_name_fkey FOREIGN KEY (position_name)
+      
+	REFERENCES positions (position_name) MATCH SIMPLE
+      
+	ON UPDATE CASCADE ON DELETE CASCADE,
+  
+CONSTRAINT works_as_project_id_fkey FOREIGN KEY (project_id)
+      
+	REFERENCES projects (project_id) MATCH SIMPLE
+      
+	ON UPDATE CASCADE ON DELETE CASCADE
+)
+
+WITH (
+  
+OIDS=FALSE
+
+);
+
+

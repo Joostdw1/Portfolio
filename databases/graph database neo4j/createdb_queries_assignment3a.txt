@@ -1,0 +1,419 @@
+create (a1:Airports {name: 'Schiphol', city: 'Amsterdam', capacity: 100, size: 'Large'}),
+(a2:Airports {name: 'Venezia Marco Polo', city: 'Venice', capacity: 10, size: 'Small'}),
+(a3:Airports {name: 'Heathrow', city: 'London', capacity: 100, size: 'Large'}),
+(a4:Airports {name: 'Gatwick', city: 'London', capacity: 60, size: 'Medium'}),
+(a5:Airports {name: 'Rome Fiumicino', city: 'Rome', capacity: 60, size: 'Medium'}),
+(a6:Airports {name: 'The Hague', city: 'Rotterdam', capacity: 10, size: 'Small'})
+
+create (c1:Companies {name: 'Lufthansa', plane_number: 01, asset: 'asset'}), 
+(c2:Companies {name: 'KLM', plane_number: 02, asset: 'asset'}),
+(c3:Companies {name: 'Transavia', plane_number: 03, asset: 'asset'}),
+(c4:Companies {name: 'Air France', plane_number: 04, asset: 'asset'}),
+(c5:Companies {name: 'EasyJet', plane_number: 05, asset: 'asset'})
+create (f1:Flights {code: 'fl01', plane: 'BOEING 747'}),
+(f2:Flights {code: 'fl02', plane: 'AIRBUS A380'}),
+(f3:Flights {code: 'fl03', plane: 'BOEING 747'}),
+(f4:Flights {code: 'fl04', plane: 'BOEING 777'}),
+(f5:Flights {code: 'fl05', plane: 'AIRBUS A380'})
+
+create (f1)-[:travels {from: 'Barcelona', distance: 860, time: 1400}]->(a5),
+(f2)-[:travels {from: 'Berlijn', distance: 1184, time: 0230}]->(a5),
+(f3)-[:travels {from: 'Antwerpen', distance: 316, time: 1900}]->(a6),
+(f4)-[:travels {from: 'Praag', distance: 532, time: 2055}]->(a2),
+(f5)-[:travels {from: 'Madrid', distance: 1265, time: 1345}]->(a4)
+create (c1)-[:sells {price: 125.50}]->(f1),
+(c2)-[:sells {price: 169.99}]->(f2),
+(c2)-[:sells {price: 235.00}]->(f3),
+(c4)-[:sells {price: 105.65}]->(f4),
+(c5)-[:sells {price: 227.99}]->(f5)
+create (c1)-[:based {rent: 10500, since: 1995}]->(a2),
+(c1)-[:based {rent: 8800, since: 2005}]->(a3),
+(c2)-[:based {rent: 11000, since: 1998}]->(a1),
+(c3)-[:based {rent: 9900, since: 1978}]->(a1),
+(c3)-[:based {rent: 9100, since: 2002}]->(a6),
+(c4)-[:based {rent: 15600, since: 2010}]->(a5),
+(c5)-[:based {rent: 12300, since: 1992}]->(a3),
+(c5)-[:based {rent: 12800, since: 2003}]->(a4)
+
+
+airport names:
+  Schiphol
+  Venezia Marco Polo
+  Heathrow
+  Gatwick
+  Rome Fiumicino
+  The Hague
+
+match (a1:Airports {name: 'Schiphol'})
+create (ta:Terminals {code: 'A', open: true}),
+(tb:Terminals {code: 'B', open: true}),
+(tc:Terminals {code: 'C', open: false}),
+(td:Terminals {code: 'D', open: false}),
+(te:Terminals {code: 'E', open: true}),
+(tf:Terminals {code: 'F', open: false})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te),
+(a1)-[:includes]->(tf)
+create (ga1:Gates {number: 1, state: 'Closed'}),
+(ga2:Gates {number: 2, state: 'Closed'}),
+(ga3:Gates {number: 3, state: 'Boarding'}),
+(ga4:Gates {number: 4, state: 'Boarding'})
+create (gb1:Gates {number: 1, state: 'Boarding'}),
+(gb2:Gates {number: 2, state: 'Closed'}),
+(gb3:Gates {number: 3, state: 'Boarding'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Boarding'}),
+(gc3:Gates {number: 3, state: 'Closed'})
+create (gd1:Gates {number: 1, state: 'Closed'}),
+(gd2:Gates {number: 2, state: 'Closed'}),
+(gd3:Gates {number: 3, state: 'Closed'}),
+(gd4:Gates {number: 4, state: 'Boarding'})
+create (ge1:Gates {number: 1, state: 'Closed'}),
+(ge2:Gates {number: 2, state: 'Boarding'}),
+(ge3:Gates {number: 3, state: 'Closed'}),
+(ge4:Gates {number: 4, state: 'Closed'}),
+(ge5:Gates {number: 5, state: 'Boarding'})
+create (gf1:Gates {number: 1, state: 'Closed'}),
+(gf2:Gates {number: 2, state: 'Closed'}),
+(gf3:Gates {number: 3, state: 'Closed'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta),
+(ga4)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td),
+(gd4)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te),
+(ge4)-[:belongs]->(te),
+(ge5)-[:belongs]->(te)
+create (gf1)-[:belongs]->(tf),
+(gf2)-[:belongs]->(tf),
+(gf3)-[:belongs]->(tf)
+
+
+match (a1:Airports {name: 'Venezia Marco Polo'})
+create (ta:Terminals {code: 'A', open: false}),
+(tb:Terminals {code: 'B', open: true}),
+(tc:Terminals {code: 'C', open: true}),
+(td:Terminals {code: 'D', open: false}),
+(te:Terminals {code: 'E', open: true})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te)
+create (ga1:Gates {number: 1, state: 'Boarding'}),
+(ga2:Gates {number: 2, state: 'Closed'}),
+(ga3:Gates {number: 3, state: 'Boarding'})
+create (gb1:Gates {number: 1, state: 'Closed'}),
+(gb2:Gates {number: 2, state: 'Boarding'}),
+(gb3:Gates {number: 3, state: 'Closed'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Boarding'}),
+(gc3:Gates {number: 3, state: 'Boarding'})
+create (gd1:Gates {number: 1, state: 'Boarding'}),
+(gd2:Gates {number: 2, state: 'Boarding'}),
+(gd3:Gates {number: 3, state: 'Closed'})
+create (ge1:Gates {number: 1, state: 'Boarding'}),
+(ge2:Gates {number: 2, state: 'Closed'}),
+(ge3:Gates {number: 3, state: 'Closed'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te)
+
+
+match (a1:Airports {name: 'Heathrow'})
+create (ta:Terminals {code: 'A', open: true}),
+(tb:Terminals {code: 'B', open: false}),
+(tc:Terminals {code: 'C', open: true}),
+(td:Terminals {code: 'D', open: true}),
+(te:Terminals {code: 'E', open: false}),
+(tf:Terminals {code: 'F', open: true})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te),
+(a1)-[:includes]->(tf)
+create (ga1:Gates {number: 1, state: 'Closed'}),
+(ga2:Gates {number: 2, state: 'Closed'}),
+(ga3:Gates {number: 3, state: 'Boarding'}),
+(ga4:Gates {number: 4, state: 'Boarding'})
+create (gb1:Gates {number: 1, state: 'Closed'}),
+(gb2:Gates {number: 2, state: 'Boarding'}),
+(gb3:Gates {number: 3, state: 'Boarding'}),
+(gb4:Gates {number: 4, state: 'Closed'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Closed'}),
+(gc3:Gates {number: 3, state: 'Closed'}),
+(gc4:Gates {number: 4, state: 'Closed'})
+create (gd1:Gates {number: 1, state: 'Boarding'}),
+(gd2:Gates {number: 2, state: 'Closed'}),
+(gd3:Gates {number: 3, state: 'Boarding'}),
+(gd4:Gates {number: 4, state: 'Closed'}),
+(gd5:Gates {number: 5, state: 'Boarding'})
+create (ge1:Gates {number: 1, state: 'Closed'}),
+(ge2:Gates {number: 2, state: 'Closed'}),
+(ge3:Gates {number: 3, state: 'Boarding'})
+create (gf1:Gates {number: 1, state: 'Closed'}),
+(gf2:Gates {number: 2, state: 'Boarding'}),
+(gf3:Gates {number: 3, state: 'Closed'}),
+(gf4:Gates {number: 4, state: 'Closed'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta),
+(ga4)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb),
+(gb4)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc),
+(gc4)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td),
+(gd4)-[:belongs]->(td),
+(gd5)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te)
+create (gf1)-[:belongs]->(tf),
+(gf2)-[:belongs]->(tf),
+(gf3)-[:belongs]->(tf),
+(gf4)-[:belongs]->(tf)
+
+
+match (a1:Airports {name: 'Gatwick'})
+create (ta:Terminals {code: 'A', open: false}),
+(tb:Terminals {code: 'B', open: true}),
+(tc:Terminals {code: 'C', open: true}),
+(td:Terminals {code: 'D', open: false}),
+(te:Terminals {code: 'E', open: true})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te)
+create (ga1:Gates {number: 1, state: 'Boarding'}),
+(ga2:Gates {number: 2, state: 'Closed'}),
+(ga3:Gates {number: 3, state: 'Boarding'})
+create (gb1:Gates {number: 1, state: 'Closed'}),
+(gb2:Gates {number: 2, state: 'Closed'}),
+(gb3:Gates {number: 3, state: 'Closed'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Closed'}),
+(gc3:Gates {number: 3, state: 'Boarding'}),
+(gc4:Gates {number: 4, state: 'Closed'})
+create (gd1:Gates {number: 1, state: 'Closed'}),
+(gd2:Gates {number: 2, state: 'Closed'}),
+(gd3:Gates {number: 3, state: 'Closed'}),
+(gd4:Gates {number: 4, state: 'Boarding'})
+create (ge1:Gates {number: 1, state: 'Closed'}),
+(ge2:Gates {number: 2, state: 'Closed'}),
+(ge3:Gates {number: 3, state: 'Closed'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc),
+(gc4)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td),
+(gd4)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te)
+
+
+match (a1:Airports {name: 'Rome Fiumicino'})
+create (ta:Terminals {code: 'A', open: true}),
+(tb:Terminals {code: 'B', open: true}),
+(tc:Terminals {code: 'C', open: true}),
+(td:Terminals {code: 'D', open: true}),
+(te:Terminals {code: 'E', open: true})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te)
+create (ga1:Gates {number: 1, state: 'Closed'}),
+(ga2:Gates {number: 2, state: 'Boarding'}),
+(ga3:Gates {number: 3, state: 'Boarding'}),
+(ga4:Gates {number: 4, state: 'Boarding'}),
+(ga5:Gates {number: 5, state: 'Boarding'})
+create (gb1:Gates {number: 1, state: 'Boarding'}),
+(gb2:Gates {number: 2, state: 'Boarding'}),
+(gb3:Gates {number: 3, state: 'Closed'}),
+(gb4:Gates {number: 4, state: 'Closed'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Closed'}),
+(gc3:Gates {number: 3, state: 'Closed'})
+create (gd1:Gates {number: 1, state: 'Closed'}),
+(gd2:Gates {number: 2, state: 'Boarding'}),
+(gd3:Gates {number: 3, state: 'Closed'})
+create (ge1:Gates {number: 1, state: 'Boarding'}),
+(ge2:Gates {number: 2, state: 'Boarding'}),
+(ge3:Gates {number: 3, state: 'Closed'}),
+(ge4:Gates {number: 4, state: 'Closed'}),
+(ge5:Gates {number: 5, state: 'Boarding'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta),
+(ga4)-[:belongs]->(ta),
+(ga5)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb),
+(gb4)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te),
+(ge4)-[:belongs]->(te),
+(ge5)-[:belongs]->(te)
+
+
+match (a1:Airports {name: 'The Hague'})
+create (ta:Terminals {code: 'A', open: true}),
+(tb:Terminals {code: 'B', open: false}),
+(tc:Terminals {code: 'C', open: false}),
+(td:Terminals {code: 'D', open: true}),
+(te:Terminals {code: 'E', open: true}),
+(tf:Terminals {code: 'F', open: false})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te),
+(a1)-[:includes]->(tf)
+create (ga1:Gates {number: 1, state: 'Boarding'}),
+(ga2:Gates {number: 2, state: 'Closed'}),
+(ga3:Gates {number: 3, state: 'Closed'})
+create (gb1:Gates {number: 1, state: 'Boarding'}),
+(gb2:Gates {number: 2, state: 'Boarding'}),
+(gb3:Gates {number: 3, state: 'Closed'}),
+(gb4:Gates {number: 4, state: 'Closed'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Closed'}),
+(gc3:Gates {number: 3, state: 'Boarding'})
+create (gd1:Gates {number: 1, state: 'Closed'}),
+(gd2:Gates {number: 2, state: 'Boarding'}),
+(gd3:Gates {number: 3, state: 'Boarding'})
+create (ge1:Gates {number: 1, state: 'Boarding'}),
+(ge2:Gates {number: 2, state: 'Closed'}),
+(ge3:Gates {number: 3, state: 'Boarding'}),
+(ge4:Gates {number: 4, state: 'Closed'}),
+(ge5:Gates {number: 5, state: 'Boarding'})
+create (gf1:Gates {number: 1, state: 'Boarding'}),
+(gf2:Gates {number: 2, state: 'Closed'}),
+(gf3:Gates {number: 3, state: 'Boarding'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb),
+(gb4)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te),
+(ge4)-[:belongs]->(te),
+(ge5)-[:belongs]->(te)
+create (gf1)-[:belongs]->(tf),
+(gf2)-[:belongs]->(tf),
+(gf3)-[:belongs]->(tf)
+
+
+
+----------------------------------------------------------------------------------------
+match (a1:Airports {name: ''})
+create (ta:Terminals {code: 'A', open: true}),
+(tb:Terminals {code: 'B', open: true}),
+(tc:Terminals {code: 'C', open: false}),
+(td:Terminals {code: 'D', open: false}),
+(te:Terminals {code: 'E', open: true})
+create (a1)-[:includes]->(ta),
+(a1)-[:includes]->(tb),
+(a1)-[:includes]->(tc),
+(a1)-[:includes]->(td),
+(a1)-[:includes]->(te)
+create (ga1:Gates {number: 1, state: 'Closed'}),
+(ga2:Gates {number: 2, state: 'Closed'}),
+(ga3:Gates {number: 3, state: 'Boarding'})
+create (gb1:Gates {number: 1, state: 'Closed'}),
+(gb2:Gates {number: 2, state: 'Closed'}),
+(gb3:Gates {number: 3, state: 'Boarding'})
+create (gc1:Gates {number: 1, state: 'Closed'}),
+(gc2:Gates {number: 2, state: 'Closed'}),
+(gc3:Gates {number: 3, state: 'Boarding'})
+create (gd1:Gates {number: 1, state: 'Closed'}),
+(gd2:Gates {number: 2, state: 'Closed'}),
+(gd3:Gates {number: 3, state: 'Boarding'})
+create (ge1:Gates {number: 1, state: 'Closed'}),
+(ge2:Gates {number: 2, state: 'Closed'}),
+(ge3:Gates {number: 3, state: 'Boarding'})
+create (ga1)-[:belongs]->(ta),
+(ga2)-[:belongs]->(ta),
+(ga3)-[:belongs]->(ta)
+create (gb1)-[:belongs]->(tb),
+(gb2)-[:belongs]->(tb),
+(gb3)-[:belongs]->(tb)
+create (gc1)-[:belongs]->(tc),
+(gc2)-[:belongs]->(tc),
+(gc3)-[:belongs]->(tc)
+create (gd1)-[:belongs]->(td),
+(gd2)-[:belongs]->(td),
+(gd3)-[:belongs]->(td)
+create (ge1)-[:belongs]->(te),
+(ge2)-[:belongs]->(te),
+(ge3)-[:belongs]->(te)
+
+
+()-[]->(),
+create (f1)-[:travels {from: 'Barcelona', distance: 860, time: 1.45h}]->(a5),
+(f2)-[:travels {from: 'Berlijn', distance 1184: , time: 3.20h}]->(a5),
+(f3)-[:travels {from: 'Antwerpen', distance: 316, time: 1.05h}]->(a6),
+(f4)-[:travels {from: 'Praag', distance: 532, time: 1.20h}]->(a2),
+(f5)-[:travels {from: 'Madrid', distance: 1265, time: 2.10h}]->(a4)

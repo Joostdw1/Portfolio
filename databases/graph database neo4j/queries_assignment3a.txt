@@ -1,0 +1,35 @@
+1:
+match (a:Airports) where a.size = 'Large'
+return a.name, a.capacity
+
+2:
+match (a:Airports) 
+return a.city, sum(a.capacity) as total
+
+3:
+match (a:Airports) with max(a.capacity) as max_capacity
+match (a:Airports) where a.capacity = max_capacity
+return a.name, a.capacity
+
+4:
+match (a:Airports {name: 'Schiphol'})-[:includes]->(t:Terminals {open: true}) 
+return a.name, t.code, t.open
+
+5:
+match (a:Airports)-[:includes]->(t:Terminals) where a.city = 'London'
+return a.city, t.code
+
+6:
+match (g:Gates)-[:belongs]->(t:Terminals)<-[:includes]-(a:Airports)
+where t.code = 'B' AND a.name = 'Venezia Marco Polo' AND g.state = 'Boarding'
+return a.name, t.code, g.number, g.state
+
+7:
+match (c:Companies)-[:sells]->(f:Flights)-[:travels]->(a:Airports)  
+where a.city = 'Rome' AND c.name = 'Lufthansa' OR a.city = 'Rome' AND c.name = 'KLM'
+return f.code, f.plane
+
+8:
+match (c:Companies)-[:sells]->(f:Flights)-[t:travels]->(a:Airports)
+where a.city = 'Rome' AND t.time < 1500
+return c.name, count(t.time) as total_of_flights
